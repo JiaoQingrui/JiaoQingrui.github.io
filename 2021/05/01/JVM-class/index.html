@@ -17,18 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>404 Not Found：该页无法显示 | Hexo</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="https://jiaoqingrui.github.io/404.html">
+  <title>文档名字 | Hexo</title>
+  <meta name="description" content="Class文件主要包括：  魔数   cafe babe：识别class文件   Class文件版本   M.m，主版本号.副版本号       常量池   常量池计数器：索引是 count-1, 从1开始数，0表示不引用任何一个常量池中的项目 常量池表：包括字面量和符号引用两部分    通过一个对照表才能查到每一部分是表示的什么    字面量   文本字符串 声明为final的常量值   符号引">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文档名字">
+<meta property="og:url" content="https://jiaoqingrui.github.io/2021/05/01/JVM-class/index.html">
 <meta property="og:site_name" content="JBlog">
+<meta property="og:description" content="Class文件主要包括：  魔数   cafe babe：识别class文件   Class文件版本   M.m，主版本号.副版本号       常量池   常量池计数器：索引是 count-1, 从1开始数，0表示不引用任何一个常量池中的项目 常量池表：包括字面量和符号引用两部分    通过一个对照表才能查到每一部分是表示的什么    字面量   文本字符串 声明为final的常量值   符号引">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-05-01T10:09:21.420Z">
-<meta property="article:modified_time" content="2021-05-01T10:09:21.420Z">
+<meta property="article:published_time" content="2021-05-01T11:16:47.516Z">
+<meta property="article:modified_time" content="2021-05-01T11:16:30.985Z">
 <meta property="article:author" content="Qingrui Jiao">
+<meta property="article:tag" content="JVM">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://jiaoqingrui.github.io/404.html">
+  <link rel="canonical" href="https://jiaoqingrui.github.io/2021/05/01/JVM-class/index.html">
   
     <link rel="alternate" href="/atom.xml" title="JBlog" type="application/atom+xml">
   
@@ -277,14 +280,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="page-" class="article article-type-page" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Class文件结构" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      404 Not Found：该页无法显示
+      文档名字
     </h1>
   
 
@@ -292,12 +295,22 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/404.html" class="article-date">
-	  <time datetime="2021-05-01T10:09:21.420Z" itemprop="datePublished">2021-05-01</time>
+	<a href="/2021/05/01/JVM-class/" class="article-date">
+	  <time datetime="2021-05-01T11:16:47.516Z" itemprop="datePublished">2021-05-01</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/JVM/">JVM</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/JVM/" rel="tag">JVM</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -310,13 +323,13 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/404.html" class="leancloud_visitors"  data-flag-title="404 Not Found：该页无法显示">0</span>
+    	<span id="/2021/05/01/JVM-class/" class="leancloud_visitors"  data-flag-title="文档名字">0</span>
     </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/404.html#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/01/JVM-class/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 0(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 325(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -326,7 +339,74 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <script type="text/javascript" src="//www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="<%- config.url %>" homePageName="回到我的主页"></script>
+        <p>Class文件主要包括：</p>
+<ul>
+<li><p><strong>魔数</strong></p>
+</li>
+<li><ul>
+<li>cafe babe：识别class文件</li>
+</ul>
+</li>
+<li><p><strong>Class文件版本</strong></p>
+</li>
+<li><ul>
+<li>M.m，主版本号.副版本号    </li>
+</ul>
+</li>
+<li><p><strong>常量池</strong></p>
+</li>
+<li><ul>
+<li>常量池计数器：索引是 count-1, 从1开始数，0表示不引用任何一个常量池中的项目</li>
+<li>常量池表：包括字面量和符号引用两部分</li>
+</ul>
+</li>
+</ul>
+<p>通过一个对照表才能查到每一部分是表示的什么</p>
+<ul>
+<li><ul>
+<li><ul>
+<li><p>字面量</p>
+</li>
+<li><ul>
+<li>文本字符串</li>
+<li>声明为final的常量值</li>
+</ul>
+</li>
+<li><p>符号引用</p>
+</li>
+<li><ul>
+<li>类和接口的全限定名</li>
+<li>字段的名称和描述符</li>
+<li>方法的名称和描述符</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>访问标志</strong></p>
+</li>
+<li><p><strong>类索引、父类索引、接口索引集合</strong></p>
+</li>
+<li><p><strong>字段表集合</strong></p>
+</li>
+<li><ul>
+<li>字段计数器</li>
+<li>字段表（名字、类型、值、属性表等）</li>
+</ul>
+</li>
+<li><p><strong>方法表集合</strong></p>
+</li>
+<li><ul>
+<li>方法计数器</li>
+<li>方法表（访问标志、方法名索引、描述符索引、属性计数器、属性集合）</li>
+</ul>
+</li>
+<li><p><strong>属性表集合</strong></p>
+</li>
+</ul>
+<p>class文件只有两种数据类型：无符号数 和 表</p>
+<p>为什么要有常量池表：因为class文件无法直接被执行，需要加载才能被执行，在加载之前并不知道内存地址是什么，所以需要先保存在符号引用，加载之后通过动态链接再确定相应的地址</p>
 
       
     </div>
@@ -336,7 +416,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://jiaoqingrui.github.io/404.html" title="404 Not Found：该页无法显示" target="_blank" rel="external">https://jiaoqingrui.github.io/404.html</a>
+      <a href="https://jiaoqingrui.github.io/2021/05/01/JVM-class/" title="文档名字" target="_blank" rel="external">https://jiaoqingrui.github.io/2021/05/01/JVM-class/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -367,12 +447,28 @@
   </article>
   
     
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
 
   
 </div>
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2021/05/01/JVM-parent/" title="双亲委派机制"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
   
   
   <!-- Button trigger modal -->
@@ -486,6 +582,129 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<!-- custom analytics part create by xiamo -->
+<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script defer>
+AV.init({
+  appId: '0lAglR0BKGIRYRN1DobHtBEo-gzGzoHsz',
+  appKey: 'iqlcqGSpeaGoCFlyo28Uj27h'
+});
+
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+		var visitors= $('.leancloud_visitors');
+		query.greaterThanOrEqualTo("time", 0);		
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {				
+					return;
+				}
+				var data = results;
+				visitors.each(function(){
+					var url = $(this).attr('id').trim();					
+					for (var i = 0; i < data.length; i++) {
+						var object = data[i];
+						var content = object.get('time');
+						var _url = object.get('url')
+						if(url == _url){
+							$(this).text(content);
+						}
+					}
+				})
+				
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else {
+		showTime(Counter);
+	}
+}); 
+</script>
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '0lAglR0BKGIRYRN1DobHtBEo-gzGzoHsz',
+    appKey: 'iqlcqGSpeaGoCFlyo28Uj27h',
+    placeholder: 'comment here.',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 

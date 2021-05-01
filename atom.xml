@@ -3,11 +3,11 @@
   <title>JBlog</title>
   
   <subtitle>jioaer Blog</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://jiaoqingrui.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2021-05-01T11:07:49.884Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://jiaoqingrui.github.io/"/>
+  <updated>2021-05-01T11:16:30.985Z</updated>
+  <id>https://jiaoqingrui.github.io/</id>
   
   <author>
     <name>Qingrui Jiao</name>
@@ -17,9 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>文档名字</title>
+    <link href="https://jiaoqingrui.github.io/2021/05/01/JVM-class/"/>
+    <id>https://jiaoqingrui.github.io/2021/05/01/JVM-class/</id>
+    <published>2021-05-01T11:16:47.516Z</published>
+    <updated>2021-05-01T11:16:30.985Z</updated>
+    
+    <content type="html"><![CDATA[<p>Class文件主要包括：</p><ul><li><p><strong>魔数</strong></p></li><li><ul><li>cafe babe：识别class文件</li></ul></li><li><p><strong>Class文件版本</strong></p></li><li><ul><li>M.m，主版本号.副版本号    </li></ul></li><li><p><strong>常量池</strong></p></li><li><ul><li>常量池计数器：索引是 count-1, 从1开始数，0表示不引用任何一个常量池中的项目</li><li>常量池表：包括字面量和符号引用两部分</li></ul></li></ul><p>通过一个对照表才能查到每一部分是表示的什么</p><ul><li><ul><li><ul><li><p>字面量</p></li><li><ul><li>文本字符串</li><li>声明为final的常量值</li></ul></li><li><p>符号引用</p></li><li><ul><li>类和接口的全限定名</li><li>字段的名称和描述符</li><li>方法的名称和描述符</li></ul></li></ul></li></ul></li><li><p><strong>访问标志</strong></p></li><li><p><strong>类索引、父类索引、接口索引集合</strong></p></li><li><p><strong>字段表集合</strong></p></li><li><ul><li>字段计数器</li><li>字段表（名字、类型、值、属性表等）</li></ul></li><li><p><strong>方法表集合</strong></p></li><li><ul><li>方法计数器</li><li>方法表（访问标志、方法名索引、描述符索引、属性计数器、属性集合）</li></ul></li><li><p><strong>属性表集合</strong></p></li></ul><p>class文件只有两种数据类型：无符号数 和 表</p><p>为什么要有常量池表：因为class文件无法直接被执行，需要加载才能被执行，在加载之前并不知道内存地址是什么，所以需要先保存在符号引用，加载之后通过动态链接再确定相应的地址</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Class文件主要包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;魔数&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;cafe babe：识别class文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Class文件版本&lt;/st</summary>
+      
+    
+    
+    
+    <category term="JVM" scheme="https://jiaoqingrui.github.io/categories/JVM/"/>
+    
+    
+    <category term="JVM" scheme="https://jiaoqingrui.github.io/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>双亲委派机制</title>
-    <link href="http://example.com/2021/05/01/JVM-parent/"/>
-    <id>http://example.com/2021/05/01/JVM-parent/</id>
+    <link href="https://jiaoqingrui.github.io/2021/05/01/JVM-parent/"/>
+    <id>https://jiaoqingrui.github.io/2021/05/01/JVM-parent/</id>
     <published>2021-05-01T11:07:55.677Z</published>
     <updated>2021-05-01T11:07:49.884Z</updated>
     
@@ -35,19 +67,19 @@
     
     
     
-    <category term="JVM" scheme="http://example.com/categories/JVM/"/>
+    <category term="JVM" scheme="https://jiaoqingrui.github.io/categories/JVM/"/>
     
     
-    <category term="JVM" scheme="http://example.com/tags/JVM/"/>
+    <category term="JVM" scheme="https://jiaoqingrui.github.io/tags/JVM/"/>
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://jiaoqingrui.github.io/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/05/01/undefined/"/>
-    <id>http://example.com/2021/05/01/undefined/</id>
+    <link href="https://jiaoqingrui.github.io/2021/05/01/undefined/"/>
+    <id>https://jiaoqingrui.github.io/2021/05/01/undefined/</id>
     <published>2021-05-01T10:06:16.076Z</published>
     <updated>2021-05-01T10:06:16.076Z</updated>
     
