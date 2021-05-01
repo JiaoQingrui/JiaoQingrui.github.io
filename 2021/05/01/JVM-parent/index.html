@@ -17,20 +17,22 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hello World | Hexo</title>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <title>双亲委派机制 | Hexo</title>
+  <meta name="description" content="jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。  工作原理：  如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;  如果父类加载器还存在其父类加载器，则进一步向上委">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/05/01/hello-world/index.html">
+<meta property="og:title" content="双亲委派机制">
+<meta property="og:url" content="http://example.com/2021/05/01/JVM-parent/index.html">
 <meta property="og:site_name" content="JBlog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。  工作原理：  如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;  如果父类加载器还存在其父类加载器，则进一步向上委">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-05-01T10:06:16.076Z">
-<meta property="article:modified_time" content="2021-05-01T10:06:16.076Z">
+<meta property="article:published_time" content="2021-05-01T11:07:55.677Z">
+<meta property="article:modified_time" content="2021-05-01T11:07:49.884Z">
 <meta property="article:author" content="Qingrui Jiao">
+<meta property="article:tag" content="JVM">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2021/05/01/hello-world/index.html">
+  <link rel="canonical" href="http://example.com/2021/05/01/JVM-parent/index.html">
   
     <link rel="alternate" href="/atom.xml" title="JBlog" type="application/atom+xml">
   
@@ -177,18 +179,39 @@
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JVM/">JVM</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/JVM/" style="font-size: 13px;">JVM</a> <a href="/tags/Java/" style="font-size: 13px;">Java</a>
+    </div>
+  </div>
+
     
       
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -204,10 +227,25 @@
             
             <div class="item-inner">
               <p class="item-category">
+                <a class="category-link" href="/categories/JVM/">JVM</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/05/01/JVM-parent/" class="title">双亲委派机制</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-05-01T11:07:55.677Z" itemprop="datePublished">2021-05-01</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
                 
               </p>
               <p class="item-title">
-                <a href="/2021/05/01/hello-world/" class="title">Hello World</a>
+                <a href="/2021/05/01/undefined/" class="title">Hello World</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-05-01T10:06:16.076Z" itemprop="datePublished">2021-05-01</time>
@@ -228,14 +266,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-双亲委派机制" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      双亲委派机制
     </h1>
   
 
@@ -243,12 +281,22 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/05/01/hello-world/" class="article-date">
-	  <time datetime="2021-05-01T10:06:16.076Z" itemprop="datePublished">2021-05-01</time>
+	<a href="/2021/05/01/JVM-parent/" class="article-date">
+	  <time datetime="2021-05-01T11:07:55.677Z" itemprop="datePublished">2021-05-01</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/JVM/">JVM</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/JVM/" rel="tag">JVM</a>, <a class="article-tag-link-link" href="/tags/Java/" rel="tag">Java</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -261,13 +309,13 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2021/05/01/hello-world/" class="leancloud_visitors"  data-flag-title="Hello World">0</span>
+    	<span id="/2021/05/01/JVM-parent/" class="leancloud_visitors"  data-flag-title="双亲委派机制">0</span>
     </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/01/hello-world/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/01/JVM-parent/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 75(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 507(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -277,19 +325,48 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <hr>
+<blockquote>
+<p>jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。</p>
+</blockquote>
+<p><strong>工作原理：</strong></p>
+<ol>
+<li><p>如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;</p>
+</li>
+<li><p>如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归,请求最终将到达顶层的启动类加载器;</p>
+</li>
+<li><p>如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载，这就是双亲委派模式。</p>
+</li>
+</ol>
+<p><strong>优势：</strong></p>
+<ol>
+<li><p>避免类的重复加载，确保一个类是全局唯一的</p>
+</li>
+<li><p>保护程序安全，防止核心API被随意篡改</p>
+</li>
+</ol>
+<p>比如自定义类定义在了Lang包下面 ，就会报错</p>
+<p><strong>代码层面：</strong></p>
+<ol>
+<li><p>先在当前加载器的缓存中查找有无目标类，如果有，直接返回。</p>
+</li>
+<li><p>判断当前加载器的父加载器是否为空，如果不为空，则调用parent.loadClass(name，false)接口进行加载。</p>
+</li>
+<li><p>反之，如果当前加载器的父类加载器为空，则调用findBootstrapClass0rNull(name)接口，让引导类加载器进行加载。</p>
+</li>
+<li><p>如果通过以上3条路径都没能成功加载，则调用findClass(name)接口进行加载。该接口最终会调用java.lang.classLoader接口的defineClass系列的native接口加载目标Java类。</p>
+</li>
+</ol>
+<p>双亲委派的模型就隐藏在这第2和第3步中。</p>
+<p><strong>三次破坏行为：</strong></p>
+<ol>
+<li><p>JDK1.2之前不支持</p>
+</li>
+<li><p>线程上下文类加载器（反向委托）</p>
+</li>
+<li><p>用户对程序的动态性追求，如代码热替换，模块热部署</p>
+</li>
+</ol>
 
       
     </div>
@@ -299,7 +376,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2021/05/01/hello-world/" title="Hello World" target="_blank" rel="external">http://example.com/2021/05/01/hello-world/</a>
+      <a href="http://example.com/2021/05/01/JVM-parent/" title="双亲委派机制" target="_blank" rel="external">http://example.com/2021/05/01/JVM-parent/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -342,6 +419,16 @@
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2021/05/01/undefined/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
   
   
   <!-- Button trigger modal -->

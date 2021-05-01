@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-01T10:06:16.076Z</updated>
+  <updated>2021-05-01T11:07:49.884Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,9 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>双亲委派机制</title>
+    <link href="http://example.com/2021/05/01/JVM-parent/"/>
+    <id>http://example.com/2021/05/01/JVM-parent/</id>
+    <published>2021-05-01T11:07:55.677Z</published>
+    <updated>2021-05-01T11:07:49.884Z</updated>
+    
+    <content type="html"><![CDATA[<hr><blockquote><p>jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。</p></blockquote><p><strong>工作原理：</strong></p><ol><li><p>如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;</p></li><li><p>如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归,请求最终将到达顶层的启动类加载器;</p></li><li><p>如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载，这就是双亲委派模式。</p></li></ol><p><strong>优势：</strong></p><ol><li><p>避免类的重复加载，确保一个类是全局唯一的</p></li><li><p>保护程序安全，防止核心API被随意篡改</p></li></ol><p>比如自定义类定义在了Lang包下面 ，就会报错</p><p><strong>代码层面：</strong></p><ol><li><p>先在当前加载器的缓存中查找有无目标类，如果有，直接返回。</p></li><li><p>判断当前加载器的父加载器是否为空，如果不为空，则调用parent.loadClass(name，false)接口进行加载。</p></li><li><p>反之，如果当前加载器的父类加载器为空，则调用findBootstrapClass0rNull(name)接口，让引导类加载器进行加载。</p></li><li><p>如果通过以上3条路径都没能成功加载，则调用findClass(name)接口进行加载。该接口最终会调用java.lang.classLoader接口的defineClass系列的native接口加载目标Java类。</p></li></ol><p>双亲委派的模型就隐藏在这第2和第3步中。</p><p><strong>三次破坏行为：</strong></p><ol><li><p>JDK1.2之前不支持</p></li><li><p>线程上下文类加载器（反向委托）</p></li><li><p>用户对程序的动态性追求，如代码热替换，模块热部署</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。&lt;/p&gt;</summary>
+      
+    
+    
+    
+    <category term="JVM" scheme="http://example.com/categories/JVM/"/>
+    
+    
+    <category term="JVM" scheme="http://example.com/tags/JVM/"/>
+    
+    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/05/01/hello-world/"/>
-    <id>http://example.com/2021/05/01/hello-world/</id>
+    <link href="http://example.com/2021/05/01/undefined/"/>
+    <id>http://example.com/2021/05/01/undefined/</id>
     <published>2021-05-01T10:06:16.076Z</published>
     <updated>2021-05-01T10:06:16.076Z</updated>
     
