@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://jiaoqingrui.github.io/categories/index.html</loc>
+    <loc>https://jiaoqingrui.github.io/books/index.html</loc>
     
     <lastmod>2021-05-01</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jiaoqingrui.github.io/books/index.html</loc>
+    <loc>https://jiaoqingrui.github.io/categories/index.html</loc>
     
     <lastmod>2021-05-01</lastmod>
     
@@ -139,14 +139,14 @@
 
   
   <url>
-    <loc>https://jiaoqingrui.github.io/categories/JVM/</loc>
+    <loc>https://jiaoqingrui.github.io/categories/%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2021-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://jiaoqingrui.github.io/categories/%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://jiaoqingrui.github.io/categories/JVM/</loc>
     <lastmod>2021-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
