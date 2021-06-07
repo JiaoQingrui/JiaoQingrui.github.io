@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>JBlog</title>
+  <title>JiaoerBlog</title>
   
   <subtitle>jioaer Blog</subtitle>
-  <link href="https://jiaoqingrui.github.io/atom.xml" rel="self"/>
+  <link href="http://www.jiaoer.site/atom.xml" rel="self"/>
   
-  <link href="https://jiaoqingrui.github.io/"/>
+  <link href="http://www.jiaoer.site/"/>
   <updated>2021-05-02T07:50:17.019Z</updated>
-  <id>https://jiaoqingrui.github.io/</id>
+  <id>http://www.jiaoer.site/</id>
   
   <author>
     <name>Qingrui Jiao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>十种排序算法Java实现</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/02/alg-sort/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/02/alg-sort/</id>
+    <link href="http://www.jiaoer.site/2021/05/02/%E5%8D%81%E7%A7%8D%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95Java%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://www.jiaoer.site/2021/05/02/%E5%8D%81%E7%A7%8D%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95Java%E5%AE%9E%E7%8E%B0/</id>
     <published>2021-05-02T07:52:01.350Z</published>
     <updated>2021-05-02T07:50:17.019Z</updated>
     
@@ -35,19 +35,19 @@
     
     
     
-    <category term="数据机构与算法" scheme="https://jiaoqingrui.github.io/categories/%E6%95%B0%E6%8D%AE%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据机构与算法" scheme="http://www.jiaoer.site/categories/%E6%95%B0%E6%8D%AE%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="java" scheme="https://jiaoqingrui.github.io/tags/java/"/>
+    <category term="java" scheme="http://www.jiaoer.site/tags/java/"/>
     
-    <category term="排序算法" scheme="https://jiaoqingrui.github.io/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <category term="排序算法" scheme="http://www.jiaoer.site/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>MATLAB启动速度慢的解决办法</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/02/other-matlab/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/02/other-matlab/</id>
+    <link href="http://www.jiaoer.site/2021/05/02/MATLAB%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://www.jiaoer.site/2021/05/02/MATLAB%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
     <published>2021-05-02T07:48:07.489Z</published>
     <updated>2021-05-02T07:47:44.083Z</updated>
     
@@ -63,15 +63,15 @@
     
     
     
-    <category term="软件问题" scheme="https://jiaoqingrui.github.io/categories/%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/"/>
+    <category term="软件问题" scheme="http://www.jiaoer.site/categories/%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>TCP三次握手和四次挥手</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/01/CW-tcp3/4/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/01/CW-tcp3/4/</id>
+    <link href="http://www.jiaoer.site/2021/05/01/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/"/>
+    <id>http://www.jiaoer.site/2021/05/01/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</id>
     <published>2021-05-01T11:35:29.184Z</published>
     <updated>2021-05-01T11:48:37.157Z</updated>
     
@@ -87,15 +87,15 @@
     
     
     
-    <category term="计算机网络" scheme="https://jiaoqingrui.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="http://www.jiaoer.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>TCP和UDP的区别</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/01/CW-TCP/UDP/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/01/CW-TCP/UDP/</id>
+    <link href="http://www.jiaoer.site/2021/05/01/TCP%E5%92%8CUPD%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://www.jiaoer.site/2021/05/01/TCP%E5%92%8CUPD%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
     <published>2021-05-01T11:31:18.997Z</published>
     <updated>2021-05-01T11:31:05.560Z</updated>
     
@@ -111,15 +111,15 @@
     
     
     
-    <category term="计算机网络" scheme="https://jiaoqingrui.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="http://www.jiaoer.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>Class文件结构</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/01/JVM-class/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/01/JVM-class/</id>
+    <link href="http://www.jiaoer.site/2021/05/01/Class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/"/>
+    <id>http://www.jiaoer.site/2021/05/01/Class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</id>
     <published>2021-05-01T11:16:47.516Z</published>
     <updated>2021-05-01T11:26:29.860Z</updated>
     
@@ -141,17 +141,17 @@
     
     
     
-    <category term="JVM" scheme="https://jiaoqingrui.github.io/categories/JVM/"/>
+    <category term="JVM" scheme="http://www.jiaoer.site/categories/JVM/"/>
     
     
-    <category term="JVM" scheme="https://jiaoqingrui.github.io/tags/JVM/"/>
+    <category term="JVM" scheme="http://www.jiaoer.site/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>双亲委派机制</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/01/JVM-parent/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/01/JVM-parent/</id>
+    <link href="http://www.jiaoer.site/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/"/>
+    <id>http://www.jiaoer.site/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/</id>
     <published>2021-05-01T11:07:55.677Z</published>
     <updated>2021-05-01T11:07:49.884Z</updated>
     
@@ -167,19 +167,19 @@
     
     
     
-    <category term="JVM" scheme="https://jiaoqingrui.github.io/categories/JVM/"/>
+    <category term="JVM" scheme="http://www.jiaoer.site/categories/JVM/"/>
     
     
-    <category term="JVM" scheme="https://jiaoqingrui.github.io/tags/JVM/"/>
+    <category term="JVM" scheme="http://www.jiaoer.site/tags/JVM/"/>
     
-    <category term="Java" scheme="https://jiaoqingrui.github.io/tags/Java/"/>
+    <category term="Java" scheme="http://www.jiaoer.site/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://jiaoqingrui.github.io/2021/05/01/undefined/"/>
-    <id>https://jiaoqingrui.github.io/2021/05/01/undefined/</id>
+    <link href="http://www.jiaoer.site/2021/05/01/hello-world/"/>
+    <id>http://www.jiaoer.site/2021/05/01/hello-world/</id>
     <published>2021-05-01T10:06:16.076Z</published>
     <updated>2021-05-01T10:06:16.076Z</updated>
     
