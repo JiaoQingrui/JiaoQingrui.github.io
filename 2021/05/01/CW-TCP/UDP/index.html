@@ -17,22 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>双亲委派机制 | JBlog</title>
-  <meta name="description" content="jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。  工作原理：  如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;  如果父类加载器还存在其父类加载器，则进一步向上委">
+  <title>TCP和UDP的区别 | JBlog</title>
+  <meta name="description" content="TCP(传输控制协议)和UPD(用户数据报协议)是OSI参考模型中传输层的协议，TCP提供可靠的通信传输，而UDP则常被用于广播和细节控制交给应用的通信传输。 UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为，即使出现丢包，UDP也">
 <meta property="og:type" content="article">
-<meta property="og:title" content="双亲委派机制">
-<meta property="og:url" content="http://www.jiaoer.site/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/index.html">
+<meta property="og:title" content="TCP和UDP的区别">
+<meta property="og:url" content="http://www.jiaoer.site/2021/05/01/CW-TCP/UDP/index.html">
 <meta property="og:site_name" content="JiaoerBlog">
-<meta property="og:description" content="jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。  工作原理：  如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;  如果父类加载器还存在其父类加载器，则进一步向上委">
+<meta property="og:description" content="TCP(传输控制协议)和UPD(用户数据报协议)是OSI参考模型中传输层的协议，TCP提供可靠的通信传输，而UDP则常被用于广播和细节控制交给应用的通信传输。 UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为，即使出现丢包，UDP也">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-05-01T11:07:55.677Z">
-<meta property="article:modified_time" content="2021-05-01T11:07:49.884Z">
+<meta property="article:published_time" content="2021-05-01T11:31:18.997Z">
+<meta property="article:modified_time" content="2021-05-01T11:31:05.560Z">
 <meta property="article:author" content="Qingrui Jiao">
-<meta property="article:tag" content="JVM">
-<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://www.jiaoer.site/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/index.html">
+  <link rel="canonical" href="http://www.jiaoer.site/2021/05/01/CW-TCP/UDP/index.html">
   
     <link rel="alternate" href="/atom.xml" title="JiaoerBlog" type="application/atom+xml">
   
@@ -230,7 +228,7 @@
                 <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据机构与算法</a>
               </p>
               <p class="item-title">
-                <a href="/2021/05/02/%E5%8D%81%E7%A7%8D%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95Java%E5%AE%9E%E7%8E%B0/" class="title">十种排序算法Java实现</a>
+                <a href="/2021/05/02/alg-sort/" class="title">十种排序算法Java实现</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-05-02T07:52:01.350Z" itemprop="datePublished">2021-05-02</time>
@@ -245,7 +243,7 @@
                 <a class="category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/">软件问题</a>
               </p>
               <p class="item-title">
-                <a href="/2021/05/02/MATLAB%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="title">MATLAB启动速度慢的解决办法</a>
+                <a href="/2021/05/02/other-matlab/" class="title">MATLAB启动速度慢的解决办法</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-05-02T07:48:07.489Z" itemprop="datePublished">2021-05-02</time>
@@ -260,7 +258,7 @@
                 <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
               </p>
               <p class="item-title">
-                <a href="/2021/05/01/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/" class="title">TCP三次握手和四次挥手</a>
+                <a href="/2021/05/01/CW-tcp3/4/" class="title">TCP三次握手和四次挥手</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-05-01T11:35:29.184Z" itemprop="datePublished">2021-05-01</time>
@@ -275,7 +273,7 @@
                 <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
               </p>
               <p class="item-title">
-                <a href="/2021/05/01/TCP%E5%92%8CUPD%E7%9A%84%E5%8C%BA%E5%88%AB/" class="title">TCP和UDP的区别</a>
+                <a href="/2021/05/01/CW-TCP/UDP/" class="title">TCP和UDP的区别</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-05-01T11:31:18.997Z" itemprop="datePublished">2021-05-01</time>
@@ -290,7 +288,7 @@
                 <a class="category-link" href="/categories/JVM/">JVM</a>
               </p>
               <p class="item-title">
-                <a href="/2021/05/01/Class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/" class="title">Class文件结构</a>
+                <a href="/2021/05/01/JVM-class/" class="title">Class文件结构</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-05-01T11:16:47.516Z" itemprop="datePublished">2021-05-01</time>
@@ -311,14 +309,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-双亲委派机制" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-TCP和UPD的区别" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      双亲委派机制
+      TCP和UDP的区别
     </h1>
   
 
@@ -326,22 +324,17 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/" class="article-date">
-	  <time datetime="2021-05-01T11:07:55.677Z" itemprop="datePublished">2021-05-01</time>
+	<a href="/2021/05/01/CW-TCP/UDP/" class="article-date">
+	  <time datetime="2021-05-01T11:31:18.997Z" itemprop="datePublished">2021-05-01</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/JVM/">JVM</a>
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
   </span>
 
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/JVM/" rel="tag">JVM</a>, <a class="article-tag-link-link" href="/tags/Java/" rel="tag">Java</a>
-  </span>
-
 
         
 	<span class="article-read hidden-xs">
@@ -352,10 +345,10 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/01/CW-TCP/UDP/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 507(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 411(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -366,46 +359,17 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <hr>
-<blockquote>
-<p>jdk1.2开始：Java虚拟机对class文件采用按需加载的方式，只有在使用该类的时候才会将它的Class文件加载到内存中生成Class文件，并且在加载Class的时候使用双亲委派机制，即请求交由父类处理，它是一种任务委派模式。</p>
-</blockquote>
-<p><strong>工作原理：</strong></p>
+<p>TCP(传输控制协议)和UPD(用户数据报协议)是OSI参考模型中传输层的协议，TCP提供可靠的通信传输，而UDP则常被用于广播和细节控制交给应用的通信传输。</p>
+<p>UDP不提供复杂的控制机制，利用IP提供面向无连接的通信服务。并且它是将应用程序发来的数据在收到的那一刻，立刻按照原样发送到网络上的一种机制。即使是出现网络拥堵的情况下，UDP也无法进行流量控制等避免网络拥塞的行为，即使出现丢包，UDP也不负责重发，包乱序到达也没有纠错功能。</p>
+<p>TCP提供了数据传输时的各种控制功能，可以进行丢包重发，还可以对乱序到达的包进行顺序控制，TCP是有连接的协议，只有在通信另一端确认建立连接之后才会传输数据，可以控制了流量浪费。</p>
+<p>两者的区别大致如下 ：</p>
 <ol>
-<li><p>如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行;</p>
-</li>
-<li><p>如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归,请求最终将到达顶层的启动类加载器;</p>
-</li>
-<li><p>如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载，这就是双亲委派模式。</p>
-</li>
-</ol>
-<p><strong>优势：</strong></p>
-<ol>
-<li><p>避免类的重复加载，确保一个类是全局唯一的</p>
-</li>
-<li><p>保护程序安全，防止核心API被随意篡改</p>
-</li>
-</ol>
-<p>比如自定义类定义在了Lang包下面 ，就会报错</p>
-<p><strong>代码层面：</strong></p>
-<ol>
-<li><p>先在当前加载器的缓存中查找有无目标类，如果有，直接返回。</p>
-</li>
-<li><p>判断当前加载器的父加载器是否为空，如果不为空，则调用parent.loadClass(name，false)接口进行加载。</p>
-</li>
-<li><p>反之，如果当前加载器的父类加载器为空，则调用findBootstrapClass0rNull(name)接口，让引导类加载器进行加载。</p>
-</li>
-<li><p>如果通过以上3条路径都没能成功加载，则调用findClass(name)接口进行加载。该接口最终会调用java.lang.classLoader接口的defineClass系列的native接口加载目标Java类。</p>
-</li>
-</ol>
-<p>双亲委派的模型就隐藏在这第2和第3步中。</p>
-<p><strong>三次破坏行为：</strong></p>
-<ol>
-<li><p>JDK1.2之前不支持</p>
-</li>
-<li><p>线程上下文类加载器（反向委托）</p>
-</li>
-<li><p>用户对程序的动态性追求，如代码热替换，模块热部署</p>
-</li>
+<li>TCP面向连接，UDP面向非连接，即UDP发送数据之前不需要建立连接</li>
+<li>TCP提供可靠地数据传输服务，数据无差错，不丢失，不重复，但UDP尽最大力交付，并不提供可靠交付</li>
+<li>TCP面向字节流，UDP面向报文</li>
+<li>TCP连接是点到点的，UDP支持一对一，一对多，多对多的交互通信</li>
+<li>TCP收不开销20字节，UDP首部开销8字节</li>
+<li>TCP的逻辑通信信道是全双工的可靠信道，UDP是不可靠信道</li>
 </ol>
 
       
@@ -416,7 +380,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://www.jiaoer.site/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/" title="双亲委派机制" target="_blank" rel="external">http://www.jiaoer.site/2021/05/01/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6/</a>
+      <a href="http://www.jiaoer.site/2021/05/01/CW-TCP/UDP/" title="TCP和UDP的区别" target="_blank" rel="external">http://www.jiaoer.site/2021/05/01/CW-TCP/UDP/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -463,12 +427,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2021/05/01/Class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/" title="Class文件结构"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2021/05/01/CW-tcp3/4/" title="TCP三次握手和四次挥手"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2021/05/01/hello-world/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2021/05/01/JVM-class/" title="Class文件结构"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
